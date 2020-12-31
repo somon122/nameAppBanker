@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.world_tech_point.name_identity">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/baby_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/baby_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Name_Identity">
+        <activity android:name=".AboutUsActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".OpeningActivity"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".services.HinduismBabyActivity" />
+        <activity android:name=".services.ChristianBabyActivity" />
+        <activity android:name=".services.MuslimBabyActivity" />
+        <activity android:name=".favourite.FavoriteActivity" />
+        <activity android:name=".ContainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Name_Identity.NoActionBar"/>
+    </application>
+
+</manifest>
